@@ -126,7 +126,7 @@ function buildTrace2() {
 
         };
 
-        
+
         Plotly.newPlot('bar2', chartData2, layout2);
 
 })};
@@ -138,14 +138,15 @@ function metaData() {
   
    d3.json("samples.json").then( (data) => {
    var id940 = data.metadata[0];
-   var sampleData = d3.select(`#sample-metadata`);
+   var bacData = d3.select(`#sample-metadata`);
 
    Object.entries(id940).forEach(function([key,value]){
-     var row = sampleData.append("p");
+     var row = bacData.append("p");
      row.text(`${key}:${value}`)
    })
  });
 }
+
 
 metaData();
 buildTrace1();
