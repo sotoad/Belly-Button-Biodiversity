@@ -1,19 +1,3 @@
-// create dropdown menu
-
-//update on change
-
-//create a drop down menu for 940
-
-function updatePlotly() {
-    d3.json("samples.json").then( (data) => {
-        var idNames = data.names
-        const dropdownMenu = d3.select("#selDataset");
-           
-
-    });
-
-}
-
 // using d3 to read samples.json
 
 function buildTrace1() {
@@ -87,6 +71,8 @@ function buildTrace1() {
 
 })};
 
+
+//create 2nd graph
 
 function buildTrace2() {
         d3.json("samples.json").then( function(data)  {
